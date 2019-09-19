@@ -1,0 +1,14 @@
+import casas.*
+import cosas.*
+
+test "la casa" {
+	fixture{
+	casaDePepeYJulian.comprar(tiraDeAsado)
+	casaDePepeYJulian.comprar(paqueteDeFideos)
+	casaDePepeYJulian.comprar(plancha)
+	casaDePepeYJulian.comprar(cama)
+	}
+	test "gasto en comida" {
+	assert.equals(400,casaDePepeYJulian.gastoEnComida())	
+	}
+}
